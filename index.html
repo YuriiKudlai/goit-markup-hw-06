@@ -67,6 +67,48 @@
                 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
+                    <form class="modal-form">
+                        <label class="modal-form-title" for="">Оставьте свои данные, мы вам перезвоним</label>
+                        
+                    <input 
+                    class="modal-form-input"
+                    name="name"
+                    type="text"
+                    id="name"
+                    >
+                    <label for="name">Имя</label>
+
+                    <input 
+                    class="modal-form-input"
+                    name="tel"
+                    type="tel"
+                    id="tel">
+                    <label for="tel">Телефон</label>
+
+                    <input 
+                    class="modal-form-input"
+                    name="email"
+                    type="email"
+                    id="email">
+                    <label for="email">Почта</label>
+
+                        <br>
+                    <label for="comment">Комментарий</label>
+                    <textarea
+                    class="modal-form-textarea"
+                    name="comment"
+                    id="comment"
+                    placeholder="Введите текст"
+                    rows="8"></textarea>
+
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                    </label>
+
+                    <button class="hero-btn" type="submit">Отправить</button>
+                    </form>
+
+
                     <button class="btn-modal" data-modal-close>
                         <svg class="icon-close">
                         <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -424,6 +466,26 @@
                             </a>
                         </li>
                     </ul>
+            </div>
+            <div class="footer-input-container">
+                <strong class="footer-attachment">Подпишитесь на рассылку</strong>
+                <form class="footer-form">
+                    <label>
+                        <input 
+                        class="footer-input" 
+                        name="email"
+                        type="email"
+                        placeholder="E-mail">
+                    </label>
+                    <button
+                    class="footer-form-btn"
+                    type="submit"
+                    >Подписаться
+                <svg class="icon-send">
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </button>
+                </form>
             </div>
         </div>
     </footer>
