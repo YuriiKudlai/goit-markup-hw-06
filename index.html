@@ -67,43 +67,63 @@
                 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <form class="modal-form">
+                    <form class="modal-form" autocomplete="off">
                         <label class="modal-form-title" for="">Оставьте свои данные, мы вам перезвоним</label>
+                   
+                   
+                        <label class="modal-form-field">
+                            <span class="modal-form-label">Имя</span>
+                            <input class="modal-form-input" 
+                            name="name" 
+                            type="text"  
+                            placeholder=" ">
+                        <svg class="form-icon">
+                            <use href="./images/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                        </label>
                         
-                    <input 
-                    class="modal-form-input"
-                    name="name"
-                    type="text"
-                    id="name"
-                    >
-                    <label for="name">Имя</label>
+                        <label class="modal-form-field">
+                            <span class="modal-form-label">Телефон</span>
+                            <input class="modal-form-input" 
+                            name="telephone" 
+                            type="tel" 
+                            placeholder=" ">
+                            <svg class="form-icon">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                    
+                        <label class="modal-form-field">
+                            <span class="modal-form-label">Почта</span>
+                            <input class="modal-form-input" 
+                            name="email" 
+                            type="email" 
+                            placeholder=" ">  
+                            <svg class="form-icon">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </label>
 
-                    <input 
-                    class="modal-form-input"
-                    name="tel"
-                    type="tel"
-                    id="tel">
-                    <label for="tel">Телефон</label>
+                        <label for="comment"
+                        class="modal-form-label"
+                        >Комментарий</label>
+                        <textarea
+                        class="modal-form-textarea"
+                        name="comment"
+                        id="comment"
+                        placeholder="Введите текст"
+                        rows="8"></textarea>
 
-                    <input 
-                    class="modal-form-input"
-                    name="email"
-                    type="email"
-                    id="email">
-                    <label for="email">Почта</label>
-
-                        <br>
-                    <label for="comment">Комментарий</label>
-                    <textarea
-                    class="modal-form-textarea"
-                    name="comment"
-                    id="comment"
-                    placeholder="Введите текст"
-                    rows="8"></textarea>
-
-                    <input type="checkbox" name="policy" id="policy" />
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-                    </label>
+                    
+                        <label for="policy"
+                            class="modal-form-policy">
+                            <input type="checkbox" 
+                            class="checkbox"
+                            name="policy" 
+                            id="policy"/>
+                            <span class="icon-checkbox"></span>
+                            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                        </label>
 
                     <button class="hero-btn" type="submit">Отправить</button>
                     </form>
