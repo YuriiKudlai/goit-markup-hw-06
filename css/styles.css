@@ -269,6 +269,8 @@ body {
   border-radius: 4px;
   width: 200px;
   height: 50px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .backdrop {
@@ -417,7 +419,10 @@ body {
 }
 
 .modal-form-policy {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 30px;
   font-family: Roboto;
   font-style: normal;
@@ -428,6 +433,11 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+}
+
+.link-policy {
+  color: var(--accent-color);
+  text-decoration-line: underline;
 }
 
 .checkbox {
@@ -445,10 +455,19 @@ body {
 
 .icon-checkbox {
   display: inline-block;
+  margin-right: 8px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid var(--primary-text-color);
+}
+
+.modal-form-policy:focus-within > .icon-checkbox {
+  border: 2px solid var(--accent-color);
+}
+
+.modal-form-policy:hover > .icon-checkbox {
+  border: 2px solid var(--accent-color);
 }
 
 .checkbox:checked + .icon-checkbox {
@@ -837,8 +856,9 @@ textarea {
 }
 
 .addres {
+  width: 231px;
   font-style: inherit;
-  margin-right: 60px;
+  margin-right: 66px;
 }
 
 .footer-addres {
